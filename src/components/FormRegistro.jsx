@@ -9,7 +9,6 @@ import Container from '@mui/material/Container'
 
 import { useState } from 'react'
 
-
 function FormRegistro() {
     const [data, setData] = useState({name:'', breed:''})
 
@@ -46,7 +45,7 @@ function FormRegistro() {
                                 required
                                 label='Nombre Mascota'
                                 variant='outlined'
-                                fullWidth
+                                fullWidth {/*Ocupe todo el ancho*/}
                                 value={data.name}
                                 onChange={handleChangeName}
 
@@ -57,13 +56,13 @@ function FormRegistro() {
                                 label='Raza'
                                 variant='outlined'
                                 fullWidth
-                                value=*rellenarlo
-                                onChange=*rellenarlo
+                                value={data.breed}
+                                onChange={handleChangeBreed}
 
                                 />
                         </Grid>
                         <Grid size={12}>
-                            <Button type=*rellenarlo variant='outlined' fullWidth>Registrar</Button>
+                            <Button type='submit' variant='outlined' fullWidth>Registrar</Button>
                     </Grid>
                 </Grid>
             </Box>
