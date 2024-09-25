@@ -40,7 +40,7 @@ function App() {
                     <center>
                         <Avatar className='avatar'
                                 src={datos.imageUrl}
-                                alt='imagen'ruy
+                                alt='imagen'
                                 sx={styles.avatar}>
 
                         </Avatar><br/>
