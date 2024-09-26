@@ -16,4 +16,4 @@ const Appgrid = () => {
     )
 }
 
-export default Appgrid;
+export default Appgrid
