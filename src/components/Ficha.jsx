@@ -1,15 +1,7 @@
-import {Avatar, Button, Stack, Typography, useTheme} from "@mui/material";
-import Appgrid from "../Appgrid.jsx";
-import {useState} from "react";
+import {CustomButton} from 'milibreria';
+import {Avatar, Stack, Typography} from "@mui/material";
 
 function Ficha({animal, atribute, imageUrl, imageSize, description}) {
-    const [count, setCount] = useState(0)
-    const theme = useTheme();
-
-    function handleClick(){
-        setCount(count+1)
-    }
-
 return (
     <>
         <div>
@@ -18,6 +10,7 @@ return (
                 <center>
                     <Typography variant='h2'>Soy un {animal} y {atribute}</Typography>
                     <Typography>{description}</Typography>
+                    <CustomButton text={"hola"} txtcolor={"white"} bgcolor={"orange"}></CustomButton>
                 </center>
                 <center>
                     <Avatar className='avatar'
